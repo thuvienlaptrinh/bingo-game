@@ -67,7 +67,7 @@ const iohttp = new Server(HTTP_PORT, {
 }).listen(HTTP_SERVER);
 
 let STUDENT_PASSWORD = "vuilen";
-const ADMIN_PASSWORD = "13343210";
+const ADMIN_PASSWORD = "admin123";
 let bingoArrayNumber = [];
 const USERS_LIST = {
   admin: {},
