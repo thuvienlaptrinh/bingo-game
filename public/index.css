@@ -1,0 +1,104 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+/* Ensure the body and html fill the full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout to ensure content fills available space */
+.full-height {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure main content takes up available vertical space */
+main {
+  flex-grow: 1;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+.table td,
+.table th {
+  text-align: center;
+  vertical-align: middle;
+}
+/* Material Colors */
+.color-1 {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+.color-2 {
+  background-color: #e91e63 !important;
+  color: white !important;
+}
+.color-3 {
+  background-color: #9c27b0 !important;
+  color: white !important;
+}
+.color-4 {
+  background-color: #673ab7 !important;
+  color: white !important;
+}
+.color-5 {
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+.color-6 {
+  background-color: #2196f3 !important;
+  color: white !important;
+}
+.color-7 {
+  background-color: #03a9f4 !important;
+  color: black !important;
+}
+.color-8 {
+  background-color: #00bcd4 !important;
+  color: black !important;
+}
+.color-9 {
+  background-color: #009688 !important;
+  color: white !important;
+}
+.color-10 {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+.text-central {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 3vw;
+  user-select: none;
+}
+.text-bordered-1 {
+  color: red; /* Text color */
+  text-shadow: 
+      -1px -1px 0 white, /* Top-left shadow */
+       1px -1px 0 white, /* Top-right shadow */
+      -1px  1px 0 white, /* Bottom-left shadow */
+       1px  1px 0 white; /* Bottom-right shadow */
+}
+.text-bordered-2 {
+  color: rgb(243, 255, 68); /* Text color */
+  text-shadow: 
+      -1px -1px 0 white, /* Top-left shadow */
+       1px -1px 0 white, /* Top-right shadow */
+      -1px  1px 0 white, /* Bottom-left shadow */
+       1px  1px 0 white; /* Bottom-right shadow */
+}
+.text-bordered-3 {
+  color: green; /* Text color */
+  text-shadow: 
+      -1px -1px 0 white, /* Top-left shadow */
+       1px -1px 0 white, /* Top-right shadow */
+      -1px  1px 0 white, /* Bottom-left shadow */
+       1px  1px 0 white; /* Bottom-right shadow */
+}
