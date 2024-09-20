@@ -102,3 +102,8 @@ main {
       -1px  1px 0 white, /* Bottom-left shadow */
        1px  1px 0 white; /* Bottom-right shadow */
 }
+.circle-with-shadow{
+  border-radius: 50%;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

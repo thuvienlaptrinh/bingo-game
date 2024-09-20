@@ -195,9 +195,7 @@ function connectToServer() {
   });
 
   socket.on("studentTable", (studentTable) => {
-    document.getElementById(
-      "txt-end-status"
-    ).innerText = `Mã chiến thắng`;
+    document.getElementById("txt-end-status").innerText = `Mã chiến thắng`;
     Swal.close();
     myTable = studentTable;
     const table = document.getElementById("myTable");
@@ -212,7 +210,7 @@ function connectToServer() {
         if (randNum == 0) {
           randNum = "";
         }
-        tableHtml += `<td class="${colorClass}"><div class="ratio ratio-1x1"><div class="text-central">${randNum}</div></div></td>`;
+        tableHtml += `<td class="${colorClass}"><div class="ratio ratio-1x1"><div class="text-central"><div class="number-display">${randNum}</div></div></div></td>`;
       }
       tableHtml += "</tr>";
     }
@@ -237,12 +235,13 @@ function borderNumberAndCheck() {
   document.getElementById("txt-current").innerHTML = `${numbersArray.join(
     ";"
   )}`;
-  const elements = document.querySelectorAll(".text-central");
+  const elements = document.querySelectorAll(".number-display");
   elements.forEach((element) => {
     const eText = element.textContent;
     if (eText !== "") {
       numbersArray.forEach((T) => {
         if (parseInt(eText) == T) {
+          element.classList.add("circle-with-shadow");
           if (themeSelected == 1) {
             element.classList.add("text-bordered-3");
           } else if (themeSelected < 4) {
